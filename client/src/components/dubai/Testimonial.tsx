@@ -9,7 +9,7 @@ export default function Testimonial() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center"
+          className="text-center relative"
         >
           <div className="pattern-dots opacity-20 absolute top-0 left-0 h-full w-1/4"></div>
           
