@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function RelocationSection() {
   return (
-    <section className="bg-[#F8F0C6] py-24 px-4">
+    <section className="bg-[#FCF7E5] py-24 px-4">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

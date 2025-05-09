@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function BankAccountSection() {
   return (
-    <section className="bg-[#F8F0C6] py-24 px-4">
+    <section className="bg-[#FCF7E5] py-24 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
           <motion.div

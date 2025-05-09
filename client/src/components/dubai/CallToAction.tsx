@@ -21,7 +21,7 @@ export default function CallToAction() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-[#F8F0C6]/90 backdrop-blur-sm rounded-xl p-12 text-center border border-[#8B4513]/10 shadow-lg"
+          className="bg-[#FCF7E5]/90 backdrop-blur-sm rounded-xl p-12 text-center border border-[#8B4513]/10 shadow-lg"
         >
           <h2 className="text-3xl md:text-4xl font-serif text-[#8B4513] mb-8">
             Start Your Dubai Journey Today.
