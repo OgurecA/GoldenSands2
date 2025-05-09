@@ -9,10 +9,8 @@ export default function Testimonial() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center relative"
+          className="text-center"
         >
-          <div className="pattern-dots opacity-20 absolute top-0 left-0 h-full w-1/4"></div>
-          
           <blockquote className="text-white text-2xl md:text-3xl font-serif italic mb-8">
             "Dubai Living made my move stress-free by assisting with
             all the paperwork and requirements."
@@ -30,8 +28,6 @@ export default function Testimonial() {
               <div className="font-medium">Natalie Thompson</div>
             </div>
           </div>
-          
-          <div className="pattern-dots opacity-20 absolute bottom-0 right-0 h-full w-1/4"></div>
         </motion.div>
       </div>
     </section>
