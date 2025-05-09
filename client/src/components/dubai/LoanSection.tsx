@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function LoanSection() {
   return (
-    <section className="bg-[hsl(var(--dubai-cream))] py-24 px-4">
+    <section className="bg-gradient-to-b from-[hsl(var(--dubai-cream))] to-[hsl(var(--dubai-cream-darker))] py-24 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <motion.div

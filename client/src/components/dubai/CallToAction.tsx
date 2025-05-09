@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function CallToAction() {
   return (
-    <section className="bg-[hsl(var(--dubai-cream))] py-24 px-4">
+    <section className="bg-gradient-to-b from-[hsl(var(--dubai-cream-darker))] to-[hsl(var(--dubai-cream))] py-24 px-4">
       <div className="max-w-4xl mx-auto relative">
         <div className="absolute top-0 right-0 w-1/2 h-1/2 pattern-dots opacity-10"></div>
         

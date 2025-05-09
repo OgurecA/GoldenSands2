@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function DubaiHero() {
   return (
-    <section className="bg-[hsl(var(--dubai-cream))] min-h-screen flex flex-col items-center justify-center py-20 px-4">
+    <section className="bg-gradient-to-b from-[hsl(var(--dubai-cream))] to-[hsl(var(--dubai-cream-darker))] min-h-screen flex flex-col items-center justify-center py-20 px-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

@@ -21,7 +21,7 @@ export default function VideoSection() {
   }, []);
 
   return (
-    <section className="bg-[hsl(var(--dubai-cream))] py-10 px-4">
+    <section className="bg-gradient-to-b from-[hsl(var(--dubai-cream-darker))] to-[hsl(var(--dubai-cream))] py-10 px-4">
       <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-xl">
         <div className="relative pb-[56.25%] h-0"> {/* 16:9 aspect ratio */}
           <video 
