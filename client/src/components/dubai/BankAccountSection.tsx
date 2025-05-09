@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function BankAccountSection() {
   return (
-    <section className="bg-gradient-to-b from-[hsl(var(--dubai-cream-darker))] to-[hsl(var(--dubai-cream))] py-24 px-4">
+    <section className="bg-[#F8F0C6] py-24 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
           <motion.div
@@ -26,10 +26,10 @@ export default function BankAccountSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:w-1/2"
           >
-            <h3 className="text-3xl font-serif text-[hsl(var(--dubai-brown))] mb-4">
+            <h3 className="text-3xl font-serif text-[#8B4513] mb-4">
               Bank Account Setup
             </h3>
-            <p className="text-lg text-[hsl(var(--dubai-brown))] mb-6">
+            <p className="text-lg text-[#8B4513] mb-6">
               Open a bank account hassle-free. We guide you through the requirements
               and help you set up your account quickly.
             </p>

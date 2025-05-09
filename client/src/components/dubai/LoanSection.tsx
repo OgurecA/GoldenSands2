@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function LoanSection() {
   return (
-    <section className="bg-gradient-to-b from-[hsl(var(--dubai-cream))] to-[hsl(var(--dubai-cream-darker))] py-24 px-4">
+    <section className="bg-[#F8F0C6] py-24 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <motion.div
@@ -26,10 +26,10 @@ export default function LoanSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:w-1/2"
           >
-            <h3 className="text-3xl font-serif text-[hsl(var(--dubai-brown))] mb-4">
+            <h3 className="text-3xl font-serif text-[#8B4513] mb-4">
               Loan Support
             </h3>
-            <p className="text-lg text-[hsl(var(--dubai-brown))] mb-6">
+            <p className="text-lg text-[#8B4513] mb-6">
               Need financial assistance? We provide guidance on loans to help you
               secure the funds you need for your new life in Dubai.
             </p>
