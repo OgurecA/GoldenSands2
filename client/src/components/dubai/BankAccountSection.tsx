@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function BankAccountSection() {
+  const { t } = useLanguage();
+  
   return (
     <section className="bg-[#FCF7E5] py-24 px-4">
       <div className="max-w-7xl mx-auto">
@@ -27,11 +30,10 @@ export default function BankAccountSection() {
             className="lg:w-1/2"
           >
             <h3 className="text-3xl font-serif text-[#8B4513] mb-4">
-              Bank Account Setup
+              {t('banking', 'title')}
             </h3>
             <p className="text-lg text-[#8B4513] mb-6">
-              Open a bank account hassle-free. We guide you through the requirements
-              and help you set up your account quickly.
+              {t('banking', 'description')}
             </p>
           </motion.div>
         </div>

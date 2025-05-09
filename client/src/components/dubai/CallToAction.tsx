@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import ctaBackground from '@/assets/cta-background.png';
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function CallToAction() {
+  const { t } = useLanguage();
+  
   return (
     <section className="relative py-24 px-4">
       <div 
@@ -24,14 +27,14 @@ export default function CallToAction() {
           className="bg-[#FCF7E5]/90 backdrop-blur-sm rounded-xl p-12 text-center border border-[#8B4513]/10 shadow-lg"
         >
           <h2 className="text-3xl md:text-4xl font-serif text-[#8B4513] mb-8">
-            Start Your Dubai Journey Today.
+            {t('cta', 'title')}
           </h2>
           
           <Button 
             className="bg-[#8B4513] text-white hover:bg-[#6b3209] px-8 py-6 text-lg rounded-md"
             asChild
           >
-            <a href="#contact">Contact Us</a>
+            <a href="#contact">{t('cta', 'button')}</a>
           </Button>
         </motion.div>
       </div>

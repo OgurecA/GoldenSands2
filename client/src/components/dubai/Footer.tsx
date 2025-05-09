@@ -1,6 +1,8 @@
 import { Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
   
   return (
@@ -8,7 +10,7 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto flex flex-col items-center">
         <div className="mb-6">
           <a href="#" className="text-[#8B4513] hover:text-[#6b3209] transition-colors">
-            Homepage
+            {t('footer', 'homepage')}
           </a>
         </div>
         
@@ -28,7 +30,7 @@ export default function Footer() {
         </div>
         
         <div className="text-sm text-[#8B4513]/70">
-          © {currentYear} All rights reserved.
+          © {currentYear} {t('footer', 'rights')}
         </div>
       </div>
     </footer>

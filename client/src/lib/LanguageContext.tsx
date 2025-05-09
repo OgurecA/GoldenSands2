@@ -62,13 +62,21 @@ const translations: Translations = {
     }
   },
   relocation: {
+    mainTitle: {
+      eng: 'Relocation Made Easy',
+      rus: 'Простой переезд'
+    },
+    mainDescription: {
+      eng: 'Simplify your move with our comprehensive services.',
+      rus: 'Упростите ваш переезд с нашими комплексными услугами.'
+    },
     title: {
-      eng: 'Visa & Relocation Services',
-      rus: 'Визовые и переезднные услуги'
+      eng: 'Visa Assistance',
+      rus: 'Визовая поддержка'
     },
     description: {
-      eng: 'We provide comprehensive visa processing and relocation assistance to make your move to Dubai seamless.',
-      rus: 'Мы предоставляем комплексную обработку виз и помощь в переезде, чтобы ваш переезд в Дубай был безупречным.'
+      eng: 'We streamline the visa process, ensuring a smooth transition to Dubai. Let us handle the paperwork for you.',
+      rus: 'Мы упрощаем процесс оформления визы, обеспечивая плавный переход в Дубай. Позвольте нам взять на себя всю бумажную работу.'
     }
   },
   banking: {

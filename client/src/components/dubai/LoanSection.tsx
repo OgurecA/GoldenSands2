@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function LoanSection() {
+  const { t } = useLanguage();
+  
   return (
     <section className="bg-[#FCF7E5] py-24 px-4">
       <div className="max-w-7xl mx-auto">
@@ -27,11 +30,10 @@ export default function LoanSection() {
             className="lg:w-1/2"
           >
             <h3 className="text-3xl font-serif text-[#8B4513] mb-4">
-              Loan Support
+              {t('loan', 'title')}
             </h3>
             <p className="text-lg text-[#8B4513] mb-6">
-              Need financial assistance? We provide guidance on loans to help you
-              secure the funds you need for your new life in Dubai.
+              {t('loan', 'description')}
             </p>
           </motion.div>
         </div>
