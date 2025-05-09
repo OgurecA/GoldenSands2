@@ -5,7 +5,9 @@ export default function Footer() {
   
   return (
     <footer className="bg-gradient-to-b from-[hsl(var(--dubai-cream))] to-[hsl(var(--dubai-cream-darker))] border-t border-[hsla(var(--dubai-brown)/0.1)] py-12 px-4">
-      <div className="max-w-5xl mx-auto flex flex-col items-center">
+      <div className="max-w-5xl mx-auto flex flex-col items-center relative">
+        <div className="absolute top-0 right-0 w-1/2 h-1/2 pattern-dots opacity-10"></div>
+        <div className="absolute bottom-0 left-0 w-1/2 h-1/2 pattern-dots opacity-10"></div>
         <div className="mb-6">
           <a href="#" className="text-[hsl(var(--dubai-brown))] hover:text-[hsl(var(--dubai-accent))] transition-colors">
             Homepage

@@ -42,22 +42,6 @@ export default function DubaiHero() {
         </motion.div>
         
         <div className="mt-16 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
-          <div className="flex items-center">
-            <div className="flex">
-              {[1, 2, 3, 4, 5].map((star) => (
-                <svg 
-                  key={star} 
-                  width="24" 
-                  height="24" 
-                  viewBox="0 0 24 24" 
-                  fill="#F59E0B" 
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
-                </svg>
-              ))}
-            </div>
-          </div>
           <div className="text-[hsl(var(--dubai-brown))] font-medium">Relocation Services</div>
           <div className="h-4 w-px bg-[hsl(var(--dubai-brown))] hidden md:block" />
           <div className="text-[hsl(var(--dubai-brown))] font-medium">Expert Guidance</div>

@@ -5,8 +5,6 @@ export default function CallToAction() {
   return (
     <section className="bg-gradient-to-b from-[hsl(var(--dubai-cream-darker))] to-[hsl(var(--dubai-cream))] py-24 px-4">
       <div className="max-w-4xl mx-auto relative">
-        <div className="absolute top-0 right-0 w-1/2 h-1/2 pattern-dots opacity-10"></div>
-        
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -25,8 +23,6 @@ export default function CallToAction() {
             <a href="#contact">Contact Us</a>
           </Button>
         </motion.div>
-        
-        <div className="absolute bottom-0 left-0 w-1/2 h-1/2 pattern-dots opacity-10"></div>
       </div>
     </section>
   );
