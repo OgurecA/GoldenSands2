@@ -11,10 +11,10 @@ export default function RelocationSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-serif text-[hsl(var(--dubai-brown))] mb-6">
+          <h2 className="text-4xl md:text-5xl font-serif text-[#8B4513] mb-6">
             Relocation Made Easy
           </h2>
-          <p className="text-xl text-[hsl(var(--dubai-brown))] max-w-2xl mx-auto">
+          <p className="text-xl text-[#8B4513] max-w-2xl mx-auto">
             Simplify your move with our comprehensive services.
           </p>
         </motion.div>
@@ -41,10 +41,10 @@ export default function RelocationSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:w-1/2"
           >
-            <h3 className="text-3xl font-serif text-[hsl(var(--dubai-brown))] mb-4">
+            <h3 className="text-3xl font-serif text-[#8B4513] mb-4">
               Visa Assistance
             </h3>
-            <p className="text-lg text-[hsl(var(--dubai-brown))] mb-6">
+            <p className="text-lg text-[#8B4513] mb-6">
               We streamline the visa process, ensuring a smooth transition to Dubai. Let
               us handle the paperwork for you.
             </p>
