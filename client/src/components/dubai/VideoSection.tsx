@@ -1,5 +1,6 @@
 import { useRef, useEffect } from 'react';
 import dubaiVideo from '@/assets/dubai-video.mp4';
+import videoBackground from '@/assets/video-background.png';
 
 export default function VideoSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -21,8 +22,16 @@ export default function VideoSection() {
   }, []);
 
   return (
-    <section className="bg-gradient-to-b from-[hsl(var(--dubai-cream-darker))] to-[hsl(var(--dubai-cream))] py-10 px-4">
-      <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-xl">
+    <section className="relative py-10 px-4">
+      <div 
+        className="absolute inset-0 z-0" 
+        style={{
+          backgroundImage: `url(${videoBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      />
+      <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-xl relative z-10">
         <div className="relative pb-[56.25%] h-0"> {/* 16:9 aspect ratio */}
           <video 
             ref={videoRef}
