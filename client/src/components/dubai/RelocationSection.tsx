@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function RelocationSection() {
+  const { t } = useLanguage();
+  
   return (
     <section className="bg-[#FCF7E5] py-24 px-4">
       <div className="max-w-7xl mx-auto">
@@ -12,10 +15,10 @@ export default function RelocationSection() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-serif text-[#8B4513] mb-6">
-            Relocation Made Easy
+            {t('relocation', 'mainTitle')}
           </h2>
           <p className="text-xl text-[#8B4513] max-w-2xl mx-auto">
-            Simplify your move with our comprehensive services.
+            {t('relocation', 'mainDescription')}
           </p>
         </motion.div>
 
@@ -42,11 +45,10 @@ export default function RelocationSection() {
             className="lg:w-1/2"
           >
             <h3 className="text-3xl font-serif text-[#8B4513] mb-4">
-              Visa Assistance
+              {t('relocation', 'title')}
             </h3>
             <p className="text-lg text-[#8B4513] mb-6">
-              We streamline the visa process, ensuring a smooth transition to Dubai. Let
-              us handle the paperwork for you.
+              {t('relocation', 'description')}
             </p>
           </motion.div>
         </div>

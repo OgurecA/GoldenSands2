@@ -1,8 +1,11 @@
 import { useRef, useEffect } from 'react';
+import { motion } from "framer-motion";
 import dubaiVideo from '@/assets/dubai-video.mp4';
 import videoBackground from '@/assets/video-background.png';
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function VideoSection() {
+  const { t } = useLanguage();
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -22,7 +25,7 @@ export default function VideoSection() {
   }, []);
 
   return (
-    <section className="relative py-10 px-4">
+    <section className="relative py-16 px-4">
       <div 
         className="absolute inset-0 z-0" 
         style={{
@@ -31,18 +34,36 @@ export default function VideoSection() {
           backgroundPosition: 'center',
         }}
       />
-      <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-xl relative z-10">
-        <div className="relative pb-[56.25%] h-0"> {/* 16:9 aspect ratio */}
-          <video 
-            ref={videoRef}
-            className="absolute top-0 left-0 w-full h-full object-cover"
-            controls
-            preload="auto"
-            poster="https://images.unsplash.com/photo-1546412414-e1885e51148b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
-          >
-            <source src={dubaiVideo} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+      
+      <div className="max-w-5xl mx-auto relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-4xl md:text-5xl font-serif text-white mb-4">
+            {t('video', 'title')}
+          </h2>
+          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+            {t('video', 'description')}
+          </p>
+        </motion.div>
+      
+        <div className="rounded-2xl overflow-hidden shadow-xl">
+          <div className="relative pb-[56.25%] h-0"> {/* 16:9 aspect ratio */}
+            <video 
+              ref={videoRef}
+              className="absolute top-0 left-0 w-full h-full object-cover"
+              controls
+              preload="auto"
+              poster="https://images.unsplash.com/photo-1546412414-e1885e51148b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+            >
+              <source src={dubaiVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       </div>
     </section>

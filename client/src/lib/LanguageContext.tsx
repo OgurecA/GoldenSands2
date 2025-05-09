@@ -100,21 +100,13 @@ const translations: Translations = {
     }
   },
   testimonial: {
-    title: {
-      eng: 'What Our Clients Say',
-      rus: 'Что говорят наши клиенты'
-    },
     quote: {
-      eng: 'Dubai Living made my transition to Dubai incredibly smooth. Their team handled everything from visa processing to bank account setup with utmost professionalism.',
-      rus: 'Dubai Living сделали мой переезд в Дубай невероятно гладким. Их команда профессионально справилась со всем: от обработки визы до открытия банковского счета.'
+      eng: 'Dubai Living made my move stress-free by assisting with all the paperwork and requirements.',
+      rus: 'Dubai Living сделали мой переезд беззаботным, помогая со всеми документами и требованиями.'
     },
     author: {
-      eng: 'Alexandra Smith',
-      rus: 'Александра Смит'
-    },
-    position: {
-      eng: 'Marketing Executive',
-      rus: 'Маркетинг директор'
+      eng: 'Natalie Thompson',
+      rus: 'Наталья Томпсон'
     }
   },
   cta: {
