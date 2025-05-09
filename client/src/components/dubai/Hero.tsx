@@ -1,14 +1,23 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import heroBackground from '@/assets/hero-background.png';
 
 export default function DubaiHero() {
   return (
-    <section className="bg-gradient-to-b from-[hsl(var(--dubai-cream))] to-[hsl(var(--dubai-cream-darker))] min-h-screen flex flex-col items-center justify-center py-20 px-4">
+    <section className="relative min-h-screen flex flex-col items-center justify-center py-20 px-4">
+      <div 
+        className="absolute inset-0 z-0" 
+        style={{
+          backgroundImage: `url(${heroBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-center max-w-4xl mx-auto"
+        className="text-center max-w-4xl mx-auto relative z-10"
       >
         <h1 className="text-[hsl(var(--dubai-brown))] text-5xl md:text-7xl font-serif mb-6">
           Explore Dubai Living Services
