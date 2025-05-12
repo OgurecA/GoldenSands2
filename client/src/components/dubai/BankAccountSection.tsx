@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/LanguageContext";
+import dubaiAerialImage from '@/assets/dubai-aerial.png';
 
 export default function BankAccountSection() {
   const { t } = useLanguage();
@@ -16,8 +17,8 @@ export default function BankAccountSection() {
             className="lg:w-1/2"
           >
             <img 
-              src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-              alt="Dubai Sunset Skyline"
+              src={dubaiAerialImage}
+              alt="Dubai Aerial View"
               className="w-full h-auto rounded-2xl shadow-lg"
             />
           </motion.div>
@@ -35,6 +36,25 @@ export default function BankAccountSection() {
             <p className="text-lg text-[#8B4513] mb-6">
               {t('banking', 'description')}
             </p>
+            
+            <div className="mt-8 space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-[#8B4513]"></div>
+                <p className="text-[#8B4513]">{t('banking', 'feature1') || 'Access to international and local banks'}</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-[#8B4513]"></div>
+                <p className="text-[#8B4513]">{t('banking', 'feature2') || 'Simplified account opening process with our assistance'}</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-[#8B4513]"></div>
+                <p className="text-[#8B4513]">{t('banking', 'feature3') || 'Various account options for personal and business needs'}</p>
+              </div>
+            </div>
+            
+            <button className="mt-8 bg-[#8B4513] hover:bg-[#724114] text-white px-6 py-3 rounded-lg transition-colors duration-300 shadow-lg">
+              {t('banking', 'learnMore') || 'Learn More'}
+            </button>
           </motion.div>
         </div>
       </div>

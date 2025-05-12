@@ -103,6 +103,22 @@ const translations: Translations = {
     description: {
       eng: 'Our banking experts will guide you through the process of opening an account with the top banks in Dubai.',
       rus: 'Наши банковские специалисты проведут вас через процесс открытия счета в ведущих банках Дубая.'
+    },
+    feature1: {
+      eng: 'Access to international and local banks',
+      rus: 'Доступ к международным и местным банкам'
+    },
+    feature2: {
+      eng: 'Simplified account opening process with our assistance',
+      rus: 'Упрощенный процесс открытия счета с нашей помощью'
+    },
+    feature3: {
+      eng: 'Various account options for personal and business needs',
+      rus: 'Различные варианты счетов для личных и бизнес-потребностей'
+    },
+    learnMore: {
+      eng: 'Learn More',
+      rus: 'Узнать больше'
     }
   },
   loan: {
