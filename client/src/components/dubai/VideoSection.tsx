@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { motion } from "framer-motion";
 import dubaiVideo from '@/assets/dubai-video.mp4';
-import videoBackground from '@/assets/video-background.png';
+import videoBackground from '@/assets/new-hero-background.png';
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function VideoSection() {
@@ -43,10 +43,10 @@ export default function VideoSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-serif text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-serif text-[#8B4513] mb-4 text-shadow-sm">
             {t('video', 'title')}
           </h2>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-xl text-[#8B4513] max-w-2xl mx-auto text-shadow-sm">
             {t('video', 'description')}
           </p>
         </motion.div>
