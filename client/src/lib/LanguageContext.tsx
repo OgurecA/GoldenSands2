@@ -77,6 +77,22 @@ const translations: Translations = {
     description: {
       eng: 'We streamline the visa process, ensuring a smooth transition to Dubai. Let us handle the paperwork for you.',
       rus: 'Мы упрощаем процесс оформления визы, обеспечивая плавный переход в Дубай. Позвольте нам взять на себя всю бумажную работу.'
+    },
+    feature1: {
+      eng: 'Fast visa processing for all types of residency',
+      rus: 'Быстрое оформление виз для всех типов резиденции'
+    },
+    feature2: {
+      eng: 'Expert guidance through the entire visa process',
+      rus: 'Экспертное сопровождение на протяжении всего визового процесса'
+    },
+    feature3: {
+      eng: 'Support with document preparation and submission',
+      rus: 'Поддержка в подготовке и подаче документов'
+    },
+    learnMore: {
+      eng: 'Learn More',
+      rus: 'Узнать больше'
     }
   },
   banking: {
