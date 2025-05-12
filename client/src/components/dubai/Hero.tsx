@@ -3,19 +3,25 @@ import { motion } from "framer-motion";
 import heroBackground from '@/assets/new-hero-background.png';
 import { useLanguage } from "@/lib/LanguageContext";
 
-export default function DubaiHero() {
+interface DubaiHeroProps {
+  noBackground?: boolean;
+}
+
+export default function DubaiHero({ noBackground = false }: DubaiHeroProps) {
   const { t } = useLanguage();
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center py-20 px-4">
-      <div 
-        className="absolute inset-0 z-0" 
-        style={{
-          backgroundImage: `url(${heroBackground})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
+      {!noBackground && (
+        <div 
+          className="absolute inset-0 z-0" 
+          style={{
+            backgroundImage: `url(${heroBackground})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+      )}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

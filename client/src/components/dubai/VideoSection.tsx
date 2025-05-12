@@ -4,7 +4,11 @@ import dubaiVideo from '@/assets/dubai-video.mp4';
 import videoBackground from '@/assets/new-hero-background.png';
 import { useLanguage } from "@/lib/LanguageContext";
 
-export default function VideoSection() {
+interface VideoSectionProps {
+  noBackground?: boolean;
+}
+
+export default function VideoSection({ noBackground = false }: VideoSectionProps) {
   const { t } = useLanguage();
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -25,15 +29,17 @@ export default function VideoSection() {
   }, []);
 
   return (
-    <section className="relative py-16 px-4">
-      <div 
-        className="absolute inset-0 z-0" 
-        style={{
-          backgroundImage: `url(${videoBackground})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
+    <section className="relative py-20 mt-[-80px] px-4">
+      {!noBackground && (
+        <div 
+          className="absolute inset-0 z-0" 
+          style={{
+            backgroundImage: `url(${videoBackground})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+      )}
       
       <div className="max-w-5xl mx-auto relative z-10">
         <motion.div

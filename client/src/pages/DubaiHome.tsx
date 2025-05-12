@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet";
 import Header from "@/components/dubai/Header";
-import DubaiHero from "@/components/dubai/Hero";
-import VideoSection from "@/components/dubai/VideoSection";
+import TopSections from "@/components/dubai/TopSections";
 import RelocationSection from "@/components/dubai/RelocationSection";
 import BankAccountSection from "@/components/dubai/BankAccountSection";
 import LoanSection from "@/components/dubai/LoanSection";
@@ -28,8 +27,7 @@ export default function DubaiHome() {
       <Header />
       
       <main>
-        <DubaiHero />
-        <VideoSection />
+        <TopSections />
         <RelocationSection />
         <BankAccountSection />
         <LoanSection />
