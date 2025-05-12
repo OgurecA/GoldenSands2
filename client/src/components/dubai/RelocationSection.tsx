@@ -51,25 +51,6 @@ export default function RelocationSection() {
             <p className="text-lg text-[#8B4513] mb-6">
               {t('relocation', 'description')}
             </p>
-            
-            <div className="mt-8 space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#8B4513]"></div>
-                <p className="text-[#8B4513]">{t('relocation', 'feature1') || 'Fast visa processing for all types of residency'}</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#8B4513]"></div>
-                <p className="text-[#8B4513]">{t('relocation', 'feature2') || 'Expert guidance through the entire visa process'}</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#8B4513]"></div>
-                <p className="text-[#8B4513]">{t('relocation', 'feature3') || 'Support with document preparation and submission'}</p>
-              </div>
-            </div>
-            
-            <button className="mt-8 bg-[#8B4513] hover:bg-[#724114] text-white px-6 py-3 rounded-lg transition-colors duration-300 shadow-lg">
-              {t('relocation', 'learnMore') || 'Learn More'}
-            </button>
           </motion.div>
         </div>
       </div>

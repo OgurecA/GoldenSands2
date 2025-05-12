@@ -36,25 +36,6 @@ export default function LoanSection() {
             <p className="text-lg text-[#8B4513] mb-6">
               {t('loan', 'description')}
             </p>
-            
-            <div className="mt-8 space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#8B4513]"></div>
-                <p className="text-[#8B4513]">{t('loan', 'feature1')}</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#8B4513]"></div>
-                <p className="text-[#8B4513]">{t('loan', 'feature2')}</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#8B4513]"></div>
-                <p className="text-[#8B4513]">{t('loan', 'feature3')}</p>
-              </div>
-            </div>
-            
-            <button className="mt-8 bg-[#8B4513] hover:bg-[#724114] text-white px-6 py-3 rounded-lg transition-colors duration-300 shadow-lg">
-              {t('loan', 'learnMore') || 'Learn More'}
-            </button>
           </motion.div>
         </div>
       </div>
