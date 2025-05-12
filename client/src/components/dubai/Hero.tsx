@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import heroBackground from '@/assets/hero-background.png';
+import heroBackground from '@/assets/new-hero-background.png';
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function DubaiHero() {
@@ -22,11 +22,11 @@ export default function DubaiHero() {
         transition={{ duration: 0.6 }}
         className="text-center max-w-4xl mx-auto relative z-10"
       >
-        <h1 className="text-[#8B4513] text-5xl md:text-7xl font-serif mb-6">
+        <h1 className="text-[#8B4513] text-5xl md:text-7xl font-serif mb-6 text-shadow-sm">
           {t('hero', 'title')}
         </h1>
         
-        <p className="text-[#8B4513] text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
+        <p className="text-[#8B4513] text-xl md:text-2xl mb-12 max-w-2xl mx-auto text-shadow-sm">
           {t('hero', 'subtitle')}
         </p>
         
@@ -44,9 +44,9 @@ export default function DubaiHero() {
         </motion.div>
         
         <div className="mt-16 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
-          <div className="text-[#8B4513] font-medium">{t('hero', 'relocationServices')}</div>
+          <div className="text-[#8B4513] font-medium text-shadow-sm">{t('hero', 'relocationServices')}</div>
           <div className="h-4 w-px bg-[#8B4513] hidden md:block" />
-          <div className="text-[#8B4513] font-medium">{t('hero', 'expertGuidance')}</div>
+          <div className="text-[#8B4513] font-medium text-shadow-sm">{t('hero', 'expertGuidance')}</div>
         </div>
         
         <motion.div
@@ -55,7 +55,7 @@ export default function DubaiHero() {
           transition={{ delay: 0.6, duration: 0.6 }}
           className="mt-10 flex flex-col items-center"
         >
-          <p className="text-[#8B4513] italic text-lg mb-4">
+          <p className="text-[#8B4513] italic text-lg mb-4 text-shadow-sm">
             {t('hero', 'testimonialQuote')}
           </p>
           <div className="flex items-center">
@@ -66,7 +66,7 @@ export default function DubaiHero() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <span className="text-[#8B4513] font-medium">{t('hero', 'testimonialAuthor')}</span>
+            <span className="text-[#8B4513] font-medium text-shadow-sm">{t('hero', 'testimonialAuthor')}</span>
           </div>
         </motion.div>
       </motion.div>
