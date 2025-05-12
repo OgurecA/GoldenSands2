@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/LanguageContext";
+import palmImage from '@/assets/palm-dubai.png';
 
 export default function LoanSection() {
   const { t } = useLanguage();
@@ -16,8 +17,8 @@ export default function LoanSection() {
             className="lg:w-1/2"
           >
             <img 
-              src="https://images.unsplash.com/photo-1534120247760-c44c3e4a62f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-              alt="Dubai Night Skyline"
+              src={palmImage}
+              alt="Palm Jumeirah Dubai Aerial View"
               className="w-full h-auto rounded-2xl shadow-lg"
             />
           </motion.div>
@@ -35,6 +36,25 @@ export default function LoanSection() {
             <p className="text-lg text-[#8B4513] mb-6">
               {t('loan', 'description')}
             </p>
+            
+            <div className="mt-8 space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-[#8B4513]"></div>
+                <p className="text-[#8B4513]">{t('loan', 'feature1')}</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-[#8B4513]"></div>
+                <p className="text-[#8B4513]">{t('loan', 'feature2')}</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-[#8B4513]"></div>
+                <p className="text-[#8B4513]">{t('loan', 'feature3')}</p>
+              </div>
+            </div>
+            
+            <button className="mt-8 bg-[#8B4513] hover:bg-[#724114] text-white px-6 py-3 rounded-lg transition-colors duration-300 shadow-lg">
+              {t('loan', 'learnMore') || 'Learn More'}
+            </button>
           </motion.div>
         </div>
       </div>

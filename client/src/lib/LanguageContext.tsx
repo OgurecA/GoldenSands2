@@ -97,6 +97,22 @@ const translations: Translations = {
     description: {
       eng: 'Need financial assistance? We provide guidance on loans to help you secure the funds you need for your new life in Dubai.',
       rus: 'Нужна финансовая помощь? Мы предоставляем консультации по кредитам, чтобы помочь вам получить средства, необходимые для вашей новой жизни в Дубае.'
+    },
+    feature1: {
+      eng: 'Access to competitive interest rates with top Dubai banks',
+      rus: 'Доступ к выгодным процентным ставкам в ведущих банках Дубая'
+    },
+    feature2: {
+      eng: 'Fast application process with our assistance',
+      rus: 'Быстрый процесс подачи заявки с нашей помощью'
+    },
+    feature3: {
+      eng: 'Financing options for properties in Palm Jumeirah and other premium locations',
+      rus: 'Варианты финансирования недвижимости на Пальме Джумейра и в других престижных районах'
+    },
+    learnMore: {
+      eng: 'Learn More',
+      rus: 'Узнать больше'
     }
   },
   testimonial: {
