@@ -28,7 +28,7 @@ export default function BankAccountSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:w-1/2"
+            className="lg:w-1/2 lg:text-right"
           >
             <h3 className="text-3xl font-serif text-[#8B4513] mb-4">
               {t('banking', 'title')}
@@ -38,23 +38,25 @@ export default function BankAccountSection() {
             </p>
             
             <div className="mt-8 space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#8B4513]"></div>
+              <div className="flex items-center gap-3 lg:flex-row-reverse">
                 <p className="text-[#8B4513]">{t('banking', 'feature1') || 'Access to international and local banks'}</p>
-              </div>
-              <div className="flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-[#8B4513]"></div>
+              </div>
+              <div className="flex items-center gap-3 lg:flex-row-reverse">
                 <p className="text-[#8B4513]">{t('banking', 'feature2') || 'Simplified account opening process with our assistance'}</p>
-              </div>
-              <div className="flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-[#8B4513]"></div>
+              </div>
+              <div className="flex items-center gap-3 lg:flex-row-reverse">
                 <p className="text-[#8B4513]">{t('banking', 'feature3') || 'Various account options for personal and business needs'}</p>
+                <div className="w-2 h-2 rounded-full bg-[#8B4513]"></div>
               </div>
             </div>
             
-            <button className="mt-8 bg-[#8B4513] hover:bg-[#724114] text-white px-6 py-3 rounded-lg transition-colors duration-300 shadow-lg">
-              {t('banking', 'learnMore') || 'Learn More'}
-            </button>
+            <div className="mt-8 flex lg:justify-end">
+              <button className="bg-[#8B4513] hover:bg-[#724114] text-white px-6 py-3 rounded-lg transition-colors duration-300 shadow-lg">
+                {t('banking', 'learnMore') || 'Learn More'}
+              </button>
+            </div>
           </motion.div>
         </div>
       </div>
