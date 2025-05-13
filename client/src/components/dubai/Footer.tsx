@@ -1,4 +1,3 @@
-import { Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Footer() {
@@ -14,22 +13,7 @@ export default function Footer() {
           </a>
         </div>
         
-        <div className="flex space-x-6 mb-6">
-          <a href="#" className="text-[#8B4513] hover:text-[#6b3209] transition-colors">
-            <Facebook size={20} />
-          </a>
-          <a href="#" className="text-[#8B4513] hover:text-[#6b3209] transition-colors">
-            <Instagram size={20} />
-          </a>
-          <a href="#" className="text-[#8B4513] hover:text-[#6b3209] transition-colors">
-            <Youtube size={20} />
-          </a>
-          <a href="#" className="text-[#8B4513] hover:text-[#6b3209] transition-colors">
-            <Linkedin size={20} />
-          </a>
-        </div>
-        
-        <div className="text-sm text-[#8B4513]/70">
+        <div className="text-sm text-[#8B4513]/70 mt-4">
           © {currentYear} {t('footer', 'rights')}
         </div>
       </div>
