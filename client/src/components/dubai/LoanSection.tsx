@@ -8,9 +8,9 @@ export default function LoanSection() {
   return (
     <section className="bg-[#FCF7E5] py-24 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -24,11 +24,11 @@ export default function LoanSection() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:w-1/2"
+            className="lg:w-1/2 lg:text-right"
           >
             <h3 className="text-3xl font-serif text-[#8B4513] mb-4">
               {t('loan', 'title')}
