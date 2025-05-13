@@ -55,26 +55,7 @@ export default function DubaiHero({ noBackground = false }: DubaiHeroProps) {
           <div className="text-[#8B4513] font-medium text-shadow-sm">{t('hero', 'expertGuidance')}</div>
         </div>
         
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.6 }}
-          className="mt-10 flex flex-col items-center"
-        >
-          <p className="text-[#8B4513] italic text-lg mb-4 text-shadow-sm">
-            {t('hero', 'testimonialQuote')}
-          </p>
-          <div className="flex items-center">
-            <div className="w-10 h-10 rounded-full bg-gray-300 mr-3 overflow-hidden">
-              <img 
-                src="https://randomuser.me/api/portraits/women/44.jpg" 
-                alt={t('hero', 'testimonialAuthor')} 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <span className="text-[#8B4513] font-medium text-shadow-sm">{t('hero', 'testimonialAuthor')}</span>
-          </div>
-        </motion.div>
+{/* Отзыв удален по просьбе пользователя */}
       </motion.div>
     </section>
   );
