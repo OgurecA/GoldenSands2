@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/LanguageContext";
-import businessImage from '@/assets/dubai-business.png'; // Пока этого файла нет, добавим позже
+import businessImage from '@/assets/dubai-museum.png';
 
 export default function BusinessSetupSection() {
   const { t } = useLanguage();
@@ -18,7 +18,7 @@ export default function BusinessSetupSection() {
           >
             <img 
               src={businessImage}
-              alt="Business Setup in Dubai"
+              alt="Dubai Museum of the Future"
               className="w-full h-auto rounded-2xl shadow-lg"
             />
           </motion.div>
