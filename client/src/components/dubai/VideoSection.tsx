@@ -14,17 +14,33 @@ export default function VideoSection({ noBackground = false }: VideoSectionProps
 
   useEffect(() => {
     // Auto-play the video when component mounts
+    // Most browsers require muted videos for autoplay
     if (videoRef.current) {
-      videoRef.current.play().catch(error => {
-        console.error("Video autoplay failed:", error);
-        // Many browsers prevent autoplay with sound
+      // Set muted by default for better autoplay experience
+      videoRef.current.muted = true;
+      
+      // Try to play the video
+      const playPromise = videoRef.current.play();
+      
+      if (playPromise !== undefined) {
+        playPromise.catch(error => {
+          console.error("Video autoplay failed:", error);
+        });
+      }
+      
+      // Add click handler to unmute when user interacts
+      const handleClick = () => {
         if (videoRef.current) {
-          videoRef.current.muted = true;
-          videoRef.current.play().catch(e => 
-            console.error("Muted autoplay also failed:", e)
-          );
+          videoRef.current.muted = false;
         }
-      });
+      };
+      
+      const videoElement = videoRef.current;
+      videoElement.addEventListener('click', handleClick);
+      
+      return () => {
+        videoElement.removeEventListener('click', handleClick);
+      };
     }
   }, []);
 
@@ -64,11 +80,15 @@ export default function VideoSection({ noBackground = false }: VideoSectionProps
               className="absolute top-0 left-0 w-full h-full object-cover"
               controls
               preload="auto"
-              poster="https://images.unsplash.com/photo-1546412414-e1885e51148b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+              poster={videoBackground}
+              playsInline
             >
               <source src={dubaiVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+            <div className="absolute top-4 right-4 bg-black/50 text-white px-3 py-1.5 rounded-lg text-sm pointer-events-none opacity-80">
+              {t('video', 'clickToUnmute') || 'Click to unmute'}
+            </div>
           </div>
         </div>
       </div>

@@ -59,6 +59,10 @@ const translations: Translations = {
     description: {
       eng: 'A glimpse into the luxury and lifestyle that await you in this vibrant city.',
       rus: 'Взгляд на роскошь и образ жизни, которые ждут вас в этом ярком городе.'
+    },
+    clickToUnmute: {
+      eng: 'Click to unmute',
+      rus: 'Нажмите, чтобы включить звук'
     }
   },
   relocation: {
