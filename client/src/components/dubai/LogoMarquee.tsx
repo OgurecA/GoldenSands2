@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 // Импортируем логотипы
 import aldarLogo from "@/assets/aldar.png";
@@ -17,33 +17,56 @@ const logos = [
 ];
 
 export default function LogoMarquee() {
-  // Создаем три копии массива для гарантии непрерывности
-  const triplicatedLogos = [...logos, ...logos, ...logos, ...logos];
+  const marqueeRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    const marqueeElement = marqueeRef.current;
+    if (!marqueeElement) return;
+    
+    // Клонируем логотипы для обеспечения непрерывной анимации
+    const originalItems = Array.from(marqueeElement.children);
+    originalItems.forEach(item => {
+      const clone = item.cloneNode(true);
+      marqueeElement.appendChild(clone);
+    });
+    
+    // CSS анимация для прокрутки
+    const keyframes = `
+      @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+    `;
+    
+    // Добавляем стили
+    const styleSheet = document.createElement("style");
+    styleSheet.textContent = keyframes;
+    document.head.appendChild(styleSheet);
+    
+    marqueeElement.style.animation = "scroll 30s linear infinite";
+    
+    return () => {
+      document.head.removeChild(styleSheet);
+    };
+  }, []);
   
   return (
     <section className="bg-[#FCF7E5] py-14 overflow-hidden">
-      <div className="relative w-full">
-        <div className="logo-marquee-container overflow-hidden whitespace-nowrap">
-          <motion.div
-            className="inline-flex items-center"
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{
-              duration: 30,
-              ease: "linear",
-              repeat: Infinity,
-              repeatType: "loop"
-            }}
-          >
-            {triplicatedLogos.map((logo, index) => (
-              <div key={index} className="px-10 inline-block">
-                <img 
-                  src={logo.src}
-                  alt={logo.alt}
-                  className="h-24 md:h-28 w-auto object-contain opacity-80 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-            ))}
-          </motion.div>
+      <div className="relative w-full overflow-hidden">
+        <div 
+          ref={marqueeRef}
+          className="flex items-center whitespace-nowrap"
+          style={{ minWidth: "100%" }}
+        >
+          {logos.concat(logos).map((logo, index) => (
+            <div key={index} className="inline-flex px-10">
+              <img 
+                src={logo.src}
+                alt={logo.alt}
+                className="h-24 md:h-28 w-auto object-contain opacity-80 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
