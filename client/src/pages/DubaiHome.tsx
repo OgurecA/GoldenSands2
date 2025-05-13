@@ -3,6 +3,7 @@ import Header from "@/components/dubai/Header";
 import TopSections from "@/components/dubai/TopSections";
 import RelocationSection from "@/components/dubai/RelocationSection";
 import BankAccountSection from "@/components/dubai/BankAccountSection";
+import BusinessSetupSection from "@/components/dubai/BusinessSetupSection";
 import LoanSection from "@/components/dubai/LoanSection";
 import Testimonial from "@/components/dubai/Testimonial";
 import CallToAction from "@/components/dubai/CallToAction";
@@ -30,6 +31,7 @@ export default function DubaiHome() {
         <TopSections />
         <RelocationSection />
         <BankAccountSection />
+        <BusinessSetupSection />
         <LoanSection />
         <Testimonial />
         <CallToAction />

@@ -125,6 +125,16 @@ const translations: Translations = {
       rus: 'Узнать больше'
     }
   },
+  business: {
+    title: {
+      eng: 'Business Setup',
+      rus: 'Открытие бизнеса'
+    },
+    description: {
+      eng: 'Let us help you establish your business in Dubai. We guide you through the entire process of company formation, ensuring compliance with local regulations.',
+      rus: 'Позвольте нам помочь вам открыть бизнес в Дубае. Мы проведем вас через весь процесс создания компании, обеспечивая соответствие местным нормам.'
+    }
+  },
   loan: {
     title: {
       eng: 'Loan Support',
