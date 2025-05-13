@@ -4,49 +4,49 @@
 
 :root {
   --background: 36 33% 97%; /* Cream/beige background */
-  --foreground: 26 35% 16%; /* Brown text */
+  --foreground: 26 45% 12%; /* Darker brown text */
   --muted: 36 33% 94%;
-  --muted-foreground: 26 35% 25%;
+  --muted-foreground: 26 45% 20%;
   --popover: 36 33% 97%;
-  --popover-foreground: 26 35% 16%;
+  --popover-foreground: 26 45% 12%;
   --card: 36 33% 97%;
-  --card-foreground: 26 35% 16%;
+  --card-foreground: 26 45% 12%;
   --border: 26 35% 85%;
   --input: 26 35% 85%;
-  --primary: 26 35% 16%; /* Brown primary */
+  --primary: 26 45% 12%; /* Darker brown primary */
   --primary-foreground: 36 33% 97%;
-  --secondary: 26 35% 26%; /* Lighter brown */
+  --secondary: 26 45% 20%; /* Darker lighter brown */
   --secondary-foreground: 36 33% 97%;
-  --accent: 22 65% 36%; /* Darker brown accent */
+  --accent: 22 70% 30%; /* Even darker brown accent */
   --accent-foreground: 36 33% 97%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 36 33% 97%;
-  --ring: 26 35% 16%;
+  --ring: 26 45% 12%;
   --radius: 0.5rem;
 
   --dubai-cream: 36 33% 97%;
   --dubai-cream-darker: 36 30% 94%;
-  --dubai-brown: 26 35% 16%;
-  --dubai-accent: 22 65% 36%;
-  --dubai-light-brown: 26 35% 26%;
+  --dubai-brown: 26 45% 12%;
+  --dubai-accent: 22 70% 30%;
+  --dubai-light-brown: 26 45% 20%;
 }
 
 .dark {
-  --background: 26 35% 16%;
+  --background: 26 45% 12%;
   --foreground: 36 33% 97%;
-  --muted: 26 35% 25%;
+  --muted: 26 45% 20%;
   --muted-foreground: 36 33% 90%;
-  --popover: 26 35% 16%;
+  --popover: 26 45% 12%;
   --popover-foreground: 36 33% 97%;
-  --card: 26 35% 16%;
+  --card: 26 45% 12%;
   --card-foreground: 36 33% 97%;
   --border: 26 35% 30%;
   --input: 26 35% 30%;
   --primary: 36 33% 97%;
-  --primary-foreground: 26 35% 16%;
+  --primary-foreground: 26 45% 12%;
   --secondary: 36 33% 90%;
-  --secondary-foreground: 26 35% 16%;
-  --accent: 22 65% 55%;
+  --secondary-foreground: 26 45% 12%;
+  --accent: 22 70% 45%;
   --accent-foreground: 36 33% 97%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 36 33% 97%;
