@@ -6,10 +6,10 @@ export default function Footer() {
   
   return (
     <footer className="bg-[#FCF7E5] border-t border-[#8B4513]/10 py-12 px-4">
-      <div className="max-w-5xl mx-auto flex flex-col items-start pl-8 md:pl-16">
+      <div className="max-w-5xl mx-auto flex flex-col items-center">
         <div className="mb-6">
-          <h4 className="font-serif text-[#8B4513] text-lg mb-3">Contact Us</h4>
-          <ul className="text-[#8B4513]/80 text-sm space-y-2">
+          <h4 className="font-serif text-[#8B4513] text-lg mb-3 text-center">Contact Us</h4>
+          <ul className="text-[#8B4513]/80 text-sm space-y-2 text-center">
             <li>Telegram +757467482</li>
             <li>WhatsApp +854767843</li>
             <li>Email contact@dubailiving.com</li>
