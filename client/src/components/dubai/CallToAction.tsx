@@ -24,14 +24,14 @@ export default function CallToAction() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-[#FCF7E5]/90 backdrop-blur-sm rounded-xl p-12 text-center border border-[#8B4513]/10 shadow-lg"
+          className="bg-[#FCF7E5]/90 backdrop-blur-sm rounded-xl p-16 text-center border border-[#4A2500]/20 shadow-lg"
         >
-          <h2 className="text-3xl md:text-4xl font-serif text-[#8B4513] mb-8">
+          <h2 className="text-4xl md:text-5xl font-serif text-[#4A2500] mb-8">
             {t('cta', 'title')}
           </h2>
           
           <Button 
-            className="bg-[#8B4513] text-white hover:bg-[#6b3209] px-8 py-6 text-lg rounded-md"
+            className="bg-[#4A2500] text-white hover:bg-[#6b3209] px-10 py-7 text-xl rounded-md"
             asChild
           >
             <a href="#contact">{t('cta', 'button')}</a>
