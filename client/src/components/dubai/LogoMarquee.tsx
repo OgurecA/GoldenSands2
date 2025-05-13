@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 // Импортируем логотипы
@@ -18,33 +17,29 @@ const logos = [
 ];
 
 export default function LogoMarquee() {
-  // Создаем дублированный массив для бесконечной прокрутки
-  const duplicatedLogos = [...logos, ...logos];
+  // Создаем три копии массива для гарантии непрерывности
+  const triplicatedLogos = [...logos, ...logos, ...logos, ...logos];
   
   return (
-    <section className="bg-white py-14 overflow-hidden">
-      <div className="max-w-7xl mx-auto mb-8 text-center">
-        <h3 className="text-2xl font-serif text-[#8B4513] mb-2">Our Partners</h3>
-        <p className="text-[#8B4513]/70">We work with Dubai's top property developers</p>
-      </div>
-      
+    <section className="bg-[#FCF7E5] py-14 overflow-hidden">
       <div className="relative w-full">
         <div className="logo-marquee-container overflow-hidden whitespace-nowrap">
           <motion.div
             className="inline-flex items-center"
             animate={{ x: ["0%", "-50%"] }}
             transition={{
-              duration: 20,
+              duration: 30,
               ease: "linear",
               repeat: Infinity,
+              repeatType: "loop"
             }}
           >
-            {duplicatedLogos.map((logo, index) => (
-              <div key={index} className="px-8 inline-block">
+            {triplicatedLogos.map((logo, index) => (
+              <div key={index} className="px-10 inline-block">
                 <img 
                   src={logo.src}
                   alt={logo.alt}
-                  className="h-16 md:h-20 w-auto object-contain opacity-80 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                  className="h-24 md:h-28 w-auto object-contain opacity-80 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300"
                 />
               </div>
             ))}
