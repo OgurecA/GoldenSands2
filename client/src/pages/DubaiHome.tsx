@@ -5,7 +5,7 @@ import RelocationSection from "@/components/dubai/RelocationSection";
 import BankAccountSection from "@/components/dubai/BankAccountSection";
 import BusinessSetupSection from "@/components/dubai/BusinessSetupSection";
 import LoanSection from "@/components/dubai/LoanSection";
-import Testimonial from "@/components/dubai/Testimonial";
+// Раздел с отзывами убран
 import CallToAction from "@/components/dubai/CallToAction";
 import Footer from "@/components/dubai/Footer";
 
@@ -33,7 +33,6 @@ export default function DubaiHome() {
         <BankAccountSection />
         <BusinessSetupSection />
         <LoanSection />
-        <Testimonial />
         <CallToAction />
       </main>
       
