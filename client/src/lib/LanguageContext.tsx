@@ -163,8 +163,8 @@ const translations: Translations = {
   },
   testimonial: {
     quote: {
-      eng: 'Dubai Living made my move stress-free by assisting with all the paperwork and requirements.',
-      rus: 'Dubai Living сделали мой переезд беззаботным, помогая со всеми документами и требованиями.'
+      eng: 'Dubai Living offers comprehensive support for all your relocation needs.',
+      rus: 'Dubai Living предлагает комплексную поддержку для всех ваших потребностей при переезде.'
     },
     author: {
       eng: 'Natalie Thompson',

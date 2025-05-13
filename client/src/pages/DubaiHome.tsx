@@ -5,7 +5,6 @@ import RelocationSection from "@/components/dubai/RelocationSection";
 import BankAccountSection from "@/components/dubai/BankAccountSection";
 import BusinessSetupSection from "@/components/dubai/BusinessSetupSection";
 import LoanSection from "@/components/dubai/LoanSection";
-// Раздел с отзывами убран
 import CallToAction from "@/components/dubai/CallToAction";
 import Footer from "@/components/dubai/Footer";
 
