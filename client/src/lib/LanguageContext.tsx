@@ -43,8 +43,8 @@ const translations: Translations = {
       rus: 'Экспертное руководство'
     },
     testimonialQuote: {
-      eng: '"Their visa service saved me, since I didn\'t know anything about the visa creation process at the time."',
-      rus: '"Их визовая служба меня выручила, так как я ничего не знал о процессе создания визы в то время."'
+      eng: '"Dubai Living offers exceptional relocation services for expats like me."',
+      rus: '"Dubai Living предлагает исключительные услуги по релокации для экспатов, таких как я."'
     },
     testimonialAuthor: {
       eng: 'Mari Kulnup',
