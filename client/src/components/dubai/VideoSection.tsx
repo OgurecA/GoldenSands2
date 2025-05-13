@@ -13,34 +13,13 @@ export default function VideoSection({ noBackground = false }: VideoSectionProps
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    // Auto-play the video when component mounts
-    // Most browsers require muted videos for autoplay
+    // This is just a safety net in case HTML5 autoplay doesn't work
+    // Most browsers now support autoplay when the video is muted
     if (videoRef.current) {
-      // Set muted by default for better autoplay experience
-      videoRef.current.muted = true;
-      
-      // Try to play the video
-      const playPromise = videoRef.current.play();
-      
-      if (playPromise !== undefined) {
-        playPromise.catch(error => {
-          console.error("Video autoplay failed:", error);
-        });
-      }
-      
-      // Add click handler to unmute when user interacts
-      const handleClick = () => {
-        if (videoRef.current) {
-          videoRef.current.muted = false;
-        }
-      };
-      
-      const videoElement = videoRef.current;
-      videoElement.addEventListener('click', handleClick);
-      
-      return () => {
-        videoElement.removeEventListener('click', handleClick);
-      };
+      videoRef.current.play().catch(error => {
+        console.error("Video autoplay failed:", error);
+        // Some older browsers might still need this explicit play call
+      });
     }
   }, []);
 
@@ -74,21 +53,22 @@ export default function VideoSection({ noBackground = false }: VideoSectionProps
         </motion.div>
       
         <div className="rounded-2xl overflow-hidden shadow-xl">
-          <div className="relative pb-[56.25%] h-0"> {/* 16:9 aspect ratio */}
+          <div className="relative pb-[56.25%] h-0 bg-black"> {/* 16:9 aspect ratio */}
             <video 
               ref={videoRef}
               className="absolute top-0 left-0 w-full h-full object-cover"
-              controls
               preload="auto"
               poster={videoBackground}
               playsInline
+              autoPlay
+              muted
+              loop
             >
               <source src={dubaiVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <div className="absolute top-4 right-4 bg-black/50 text-white px-3 py-1.5 rounded-lg text-sm pointer-events-none opacity-80">
-              {t('video', 'clickToUnmute') || 'Click to unmute'}
-            </div>
+            {/* Subtle overlay for better text visibility and to make video less prominent */}
+            <div className="absolute inset-0 bg-black/10"></div>
           </div>
         </div>
       </div>
