@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/LanguageContext";
-import dubaiAerialImage from '@/assets/dubai-aerial.png';
+import palmImage from '@/assets/palm-dubai.png';
 
 export default function BankAccountSection() {
   const { t } = useLanguage();
@@ -17,8 +17,8 @@ export default function BankAccountSection() {
             className="lg:w-1/2"
           >
             <img 
-              src={dubaiAerialImage}
-              alt="Dubai Aerial View"
+              src={palmImage}
+              alt="Palm Jumeirah Dubai Aerial View"
               className="w-full h-auto rounded-2xl shadow-lg"
             />
           </motion.div>

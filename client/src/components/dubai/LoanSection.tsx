@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/LanguageContext";
-import palmImage from '@/assets/palm-dubai.png';
+import dubaiVillasImage from '@/assets/dubai-villas.png';
 
 export default function LoanSection() {
   const { t } = useLanguage();
@@ -17,8 +17,8 @@ export default function LoanSection() {
             className="lg:w-1/2"
           >
             <img 
-              src={palmImage}
-              alt="Palm Jumeirah Dubai Aerial View"
+              src={dubaiVillasImage}
+              alt="Dubai Luxury Villas Aerial View"
               className="w-full h-auto rounded-2xl shadow-lg"
             />
           </motion.div>
