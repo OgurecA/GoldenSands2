@@ -32,9 +32,11 @@ export default function CallToAction() {
           
           <Button 
             className="bg-[#4A2500] text-white hover:bg-[#6b3209] px-10 py-7 text-xl rounded-md"
-            asChild
+            onClick={() => {
+              window.location.href = "mailto:contact@dubailiving.com?subject=Dubai%20Living%20Services%20Inquiry&body=Здравствуйте,%20я%20хотел%20бы%20получить%20подробную%20информацию%20о%20ваших%20услугах...";
+            }}
           >
-            <a href="#contact">{t('cta', 'button')}</a>
+            {t('cta', 'button')}
           </Button>
         </motion.div>
       </div>
