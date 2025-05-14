@@ -43,8 +43,9 @@ export default function DubaiHero({ noBackground = false }: DubaiHeroProps) {
         >
           <Button 
             className="bg-[#4A2500] text-white hover:bg-[#6b3209] px-8 py-6 text-lg rounded-md"
-            onClick={() => {
-              window.location.href = "mailto:contact@dubailiving.com?subject=Dubai%20Living%20Inquiry&body=Здравствуйте,%20я%20хотел%20бы%20узнать%20больше%20о%20ваших%20услугах...";
+            onClick={(e) => {
+              e.preventDefault();
+              window.open("mailto:contact@dubailiving.com?subject=Dubai%20Living%20Inquiry&body=Здравствуйте,%20я%20хотел%20бы%20узнать%20больше%20о%20ваших%20услугах...", "_blank");
             }}
           >
             {t('hero', 'ctaButton')}
