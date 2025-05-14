@@ -12,19 +12,10 @@ export default function Footer() {
           <ul className="text-[#4A2500]/90 text-lg md:text-xl space-y-3 text-center">
             <li>
               <a 
-                href="tg://resolve?phone=757467482" 
+                href="https://t.me/+757467482" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#4A2500] hover:underline transition-colors cursor-pointer"
-                onClick={(e) => {
-                  e.preventDefault();
-                  // Пробуем открыть в приложении Telegram
-                  window.open("tg://resolve?phone=757467482");
-                  // Запасной вариант - открываем веб-версию с правильной ссылкой на чат
-                  setTimeout(() => {
-                    window.open("https://t.me/+757467482", "_blank");
-                  }, 300);
-                }}
               >
                 Telegram +757467482
               </a>
@@ -35,10 +26,6 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#4A2500] hover:underline transition-colors cursor-pointer"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.open("https://wa.me/854767843", "_blank");
-                }}
               >
                 WhatsApp +854767843
               </a>
@@ -47,10 +34,6 @@ export default function Footer() {
               <a 
                 href="mailto:contact@dubailiving.com" 
                 className="hover:text-[#4A2500] hover:underline transition-colors cursor-pointer"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.open("mailto:contact@dubailiving.com", "_blank");
-                }}
               >
                 Email contact@dubailiving.com
               </a>
