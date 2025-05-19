@@ -17,7 +17,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="hover:text-[#4A2500] hover:underline transition-colors cursor-pointer"
               >
-                Telegram +757467482
+                Telegram +0000000
               </a>
             </li>
             <li>
@@ -27,15 +27,15 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="hover:text-[#4A2500] hover:underline transition-colors cursor-pointer"
               >
-                WhatsApp +854767843
+                WhatsApp +0000000
               </a>
             </li>
             <li>
               <a 
-                href="mailto:contact@dubailiving.com" 
+                href="mailto:contact@goldensands.website" 
                 className="hover:text-[#4A2500] hover:underline transition-colors cursor-pointer"
               >
-                Email contact@dubailiving.com
+                Email contact@goldensands.website
               </a>
             </li>
           </ul>
