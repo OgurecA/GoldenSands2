@@ -31,18 +31,18 @@ const translations: Translations = {
   },
   header: {
     title: {
-      eng: 'Dubai Living',
-      rus: 'Жизнь в Дубае'
+      eng: 'GoldenSands',
+      rus: 'GoldenSands'
     }
   },
   hero: {
     title: {
-      eng: 'Explore Dubai Living Services',
-      rus: 'Услуги Dubai Living'
+      eng: 'Explore GoldenSands Services',
+      rus: 'Услуги GoldenSands'
     },
     subtitle: {
-      eng: 'Your ultimate guide to living in Dubai. Get assistance with visas, bank accounts, loans, and more to make your move stress-free.',
-      rus: 'Ваш путеводитель по жизни в Дубае. Получите помощь с визами, банковскими счетами, кредитами и другими услугами для комфортного переезда.'
+      eng: 'Your trusted partner for relocating to Dubai. We help with visas, bank accounts, mortgages, and more — ensuring a smooth and stress-free transition.',
+      rus: 'Надёжный партнёр для переезда в Дубай. Поможем с визами, счетами, ипотекой и другими услугами — всё для вашего комфортного и спокойного старта.'
     },
     ctaButton: {
       eng: 'Contact Us',
@@ -53,9 +53,9 @@ const translations: Translations = {
       rus: 'Услуги по переезду'
     },
     expertGuidance: {
-      eng: 'Expert Guidance',
-      rus: 'Экспертное руководство'
-    },
+      eng: 'Trusted Expert Guidance',
+      rus: 'Надёжное экспертное сопровождение'
+    },    
     testimonialQuote: {
       eng: '"Dubai Living offers exceptional relocation services for expats like me."',
       rus: '"Dubai Living предлагает исключительные услуги по релокации для экспатов, таких как я."'
@@ -68,7 +68,7 @@ const translations: Translations = {
   video: {
     title: {
       eng: 'Experience Dubai',
-      rus: 'Опыт Дубая'
+      rus: 'Откройте для себя Дубай'
     },
     description: {
       eng: 'A glimpse into the luxury and lifestyle that await you in this vibrant city.',
@@ -85,16 +85,16 @@ const translations: Translations = {
       rus: 'Простой переезд'
     },
     mainDescription: {
-      eng: 'Simplify your move with our comprehensive services.',
-      rus: 'Упростите ваш переезд с нашими комплексными услугами.'
+      eng: 'Simplify your move with our services.',
+      rus: 'Упростите ваш переезд с нашими услугами.'
     },
     title: {
       eng: 'Visa Assistance',
-      rus: 'Визовая поддержка'
-    },
+      rus: 'Помощь в оформлении виз'
+    },    
     description: {
-      eng: 'We streamline the visa process, ensuring a smooth transition to Dubai. Let us handle the paperwork for you.',
-      rus: 'Мы упрощаем процесс оформления визы, обеспечивая плавный переход в Дубай. Позвольте нам взять на себя всю бумажную работу.'
+      eng: 'We provide full support in obtaining UAE residency visas, helping you relocate to Dubai with ease. Our team handles the paperwork, appointments, and legal processes, ensuring your transition is stress-free. A UAE residence visa opens access to local bank accounts, zero income tax, and eligibility for long-term stays for you and your family.',
+      rus: 'Мы полностью сопровождаем процесс получения резидентской визы ОАЭ, упрощая ваш переезд в Дубай. Берём на себя документы, запись на биометрию и юридические процедуры. Резидентская виза позволяет открыть банковский счёт, пользоваться нулевым подоходным налогом и оставаться в стране долгосрочно — для вас и вашей семьи.'
     },
     feature1: {
       eng: 'Fast visa processing for all types of residency',
@@ -119,8 +119,8 @@ const translations: Translations = {
       rus: 'Открытие банковского счета'
     },
     description: {
-      eng: 'Our banking experts will guide you through the process of opening an account with the top banks in Dubai.',
-      rus: 'Наши банковские специалисты проведут вас через процесс открытия счета в ведущих банках Дубая.'
+      eng: 'Our banking experts provide full support in opening personal or corporate accounts with the top banks in Dubai. We help you choose the right bank based on your needs, prepare all required documents, and assist with compliance procedures. With a UAE bank account, you gain access to global financial services, multi-currency support, and a strong banking infrastructure trusted by businesses and individuals worldwide.',
+      rus: 'Наши специалисты сопровождают процесс открытия личных и корпоративных счетов в ведущих банках Дубая. Мы поможем выбрать подходящий банк под ваши цели, подготовим все документы и пройдём вместе с вами комплаенс. С банковским счётом в ОАЭ вы получаете доступ к международным финансовым услугам, мультивалютной поддержке и надёжной инфраструктуре, признанной во всём мире.'
     },
     feature1: {
       eng: 'Access to international and local banks',
@@ -145,18 +145,18 @@ const translations: Translations = {
       rus: 'Открытие бизнеса'
     },
     description: {
-      eng: 'Let us help you establish your business in Dubai. We guide you through the entire process of company formation, ensuring compliance with local regulations.',
-      rus: 'Позвольте нам помочь вам открыть бизнес в Дубае. Мы проведем вас через весь процесс создания компании, обеспечивая соответствие местным нормам.'
+      eng: 'Start your business in Dubai with confidence. We assist with company registration, legal structure selection, licensing, and compliance with UAE regulations. Whether you need a mainland, free zone, or offshore setup, our team ensures a smooth launch with minimal bureaucracy and maximum efficiency.',
+      rus: 'Откройте бизнес в Дубае с нашей профессиональной поддержкой. Мы поможем выбрать юридическую форму, оформить лицензию и пройти все этапы регистрации компании — будь то в материковой зоне, фризоне или оффшоре. Обеспечим полное соответствие законам ОАЭ и максимально упростим запуск вашего бизнеса.'
     }
   },
   loan: {
     title: {
-      eng: 'Loan Support',
-      rus: 'Поддержка по кредитам'
+      eng: 'Mortgage Assistance',
+      rus: 'Помощь с ипотекой'
     },
     description: {
-      eng: 'Need financial assistance? We provide guidance on loans to help you secure the funds you need for your new life in Dubai.',
-      rus: 'Нужна финансовая помощь? Мы предоставляем консультации по кредитам, чтобы помочь вам получить средства, необходимые для вашей новой жизни в Дубае.'
+      eng: 'Looking to buy property in Dubai? We help you navigate the mortgage process, from selecting the right bank to preparing documentation and improving approval chances. Get expert support to finance your new home in the UAE.',
+      rus: 'Планируете покупку недвижимости в Дубае? Мы сопровождаем процесс оформления ипотеки: помогаем выбрать банк, подготовить документы и повысить шансы на одобрение. Получите профессиональную поддержку для приобретения жилья в ОАЭ.'
     },
     feature1: {
       eng: 'Access to competitive interest rates with top Dubai banks',
@@ -187,8 +187,8 @@ const translations: Translations = {
   },
   cta: {
     title: {
-      eng: 'Start Your Dubai Journey Today.',
-      rus: 'Начните ваше путешествие в Дубай сегодня.'
+      eng: 'Take the First Step Toward Dubai',
+      rus: 'Сделайте первый шаг навстречу Дубаю'
     },
     button: {
       eng: 'Contact Us',
@@ -198,11 +198,11 @@ const translations: Translations = {
   footer: {
     homepage: {
       eng: 'Homepage',
-      rus: 'Домашняя страница'
+      rus: 'Homepage'
     },
     rights: {
       eng: 'All rights reserved.',
-      rus: 'Все права защищены.'
+      rus: 'All rights reserved.'
     }
   }
 };
