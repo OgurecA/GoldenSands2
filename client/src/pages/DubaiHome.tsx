@@ -8,6 +8,7 @@ import LoanSection from "@/components/dubai/LoanSection";
 import LogoMarquee from "@/components/dubai/LogoMarquee";
 import CallToAction from "@/components/dubai/CallToAction";
 import Footer from "@/components/dubai/Footer";
+import CookieConsent from "@/components/dubai/CookieConsent";
 
 export default function DubaiHome() {
   return (
@@ -18,8 +19,7 @@ export default function DubaiHome() {
         <meta property="og:title" content="Dubai Living - Your Relocation Guide" />
         <meta property="og:description" content="Get assistance with visas, bank accounts, loans, and more to make your move to Dubai stress-free." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dubailiving.com" />
-        <meta property="og:image" content="https://images.unsplash.com/photo-1546412414-e1885e51148b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" />
+        <meta property="og:url" content="https://goldensands.website" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -38,6 +38,7 @@ export default function DubaiHome() {
       </main>
       
       <Footer />
+      <CookieConsent />
     </>
   );
 }
