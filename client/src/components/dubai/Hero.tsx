@@ -45,7 +45,7 @@ export default function DubaiHero({ noBackground = false }: DubaiHeroProps) {
             className="bg-[#4A2500] text-white hover:bg-[#6b3209] px-8 py-6 text-lg rounded-md"
             onClick={(e) => {
               e.preventDefault();
-              window.open("mailto:contact@dubailiving.com?subject=Dubai%20Living%20Inquiry&body=Здравствуйте,%20я%20хотел%20бы%20узнать%20больше%20о%20ваших%20услугах...", "_blank");
+              window.open("body=Hello,%0A%0AI%E2%80%99m%20interested%20in%20your%20services%20related%20to%20visa%20assistance,%20bank%20account%20setup,%20and%20relocation%20to%20Dubai.%20I%20would%20like%20to%20receive%20more%20detailed%20information.%0A%0AThank%20you!", "_blank");
             }}
           >
             {t('hero', 'ctaButton')}

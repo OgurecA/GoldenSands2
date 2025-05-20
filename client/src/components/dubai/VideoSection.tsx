@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { motion } from "framer-motion";
 import dubaiVideo from '@/assets/dubai-video.mp4';
-import videoBackground from '@/assets/new-hero-background.png';
+import videoBackground from '@/assets/VideoReplace.png';
 import { useLanguage } from "@/lib/LanguageContext";
 
 interface VideoSectionProps {

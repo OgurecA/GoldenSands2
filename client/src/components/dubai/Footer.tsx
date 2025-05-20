@@ -32,7 +32,7 @@ export default function Footer() {
             </li>
             <li>
               <a 
-                href="mailto:contact@goldensands.website" 
+                href="body=Hello,%0A%0AI%E2%80%99m%20interested%20in%20your%20services%20related%20to%20visa%20assistance,%20bank%20account%20setup,%20and%20relocation%20to%20Dubai.%20I%20would%20like%20to%20receive%20more%20detailed%20information.%0A%0AThank%20you!" 
                 className="hover:text-[#4A2500] hover:underline transition-colors cursor-pointer"
               >
                 Email contact@goldensands.website
