@@ -12,22 +12,22 @@ export default function Footer() {
           <ul className="text-[#4A2500]/90 text-lg md:text-xl space-y-3 text-center">
             <li>
               <a 
-                href="https://t.me/+757467482" 
+                href="https://t.me/420797834807" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#4A2500] hover:underline transition-colors cursor-pointer"
               >
-                Telegram +0000000
+                Telegram +420 (797) 834-807
               </a>
             </li>
             <li>
               <a 
-                href="https://wa.me/854767843" 
+                href="https://wa.me/31610471814" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#4A2500] hover:underline transition-colors cursor-pointer"
               >
-                WhatsApp +0000000
+                WhatsApp +31 (610) 471-814
               </a>
             </li>
             <li>
