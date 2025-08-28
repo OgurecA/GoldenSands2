@@ -12,9 +12,7 @@ export default function Footer() {
           <ul className="text-[#4A2500]/90 text-lg md:text-xl space-y-3 text-center">
             <li>
               <a 
-                href="https://t.me/420797834807" 
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tg://resolve?phone=420797834807"
                 className="hover:text-[#4A2500] hover:underline transition-colors cursor-pointer"
               >
                 Telegram +420 (797) 834-807
